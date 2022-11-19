@@ -13,6 +13,14 @@
         android:theme="@style/Theme.LifePassage"
         tools:targetApi="31">
         <activity
+            android:name=".FilterActivity"
+            android:exported="false"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".PdfView"
             android:exported="false">
             <meta-data

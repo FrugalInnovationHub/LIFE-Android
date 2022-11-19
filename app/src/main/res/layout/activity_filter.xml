@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:id="@+id/previous_btn"
+        android:layout_width="124dip"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/transparent_btn"
+        android:text="anterior"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/button"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        />
+    <Button
+        android:id="@+id/transparent_btn"
+        android:layout_width="124dip"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="124dip"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/transparent_btn"
+        android:text="siguiente"
+        android:backgroundTint="@color/button"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/myimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/transparent_btn"
+        />
+
+</RelativeLayout>
