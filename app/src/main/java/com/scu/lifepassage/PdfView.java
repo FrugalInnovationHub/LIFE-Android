@@ -7,32 +7,39 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import java.io.File;
+import java.util.Objects;
 
 import es.voghdev.pdfviewpager.library.PDFViewPager;
+import es.voghdev.pdfviewpager.library.adapter.BasePDFPagerAdapter;
 import es.voghdev.pdfviewpager.library.adapter.PDFPagerAdapter;
 import es.voghdev.pdfviewpager.library.asset.CopyAsset;
 import es.voghdev.pdfviewpager.library.asset.CopyAssetThreadImpl;
 
 public class PdfView extends AppCompatActivity {
-    PDFViewPager pdfViewPager = findViewById(R.id.pdfViewPager);
+    PDFViewPager pdfViewPager;
+    BasePDFPagerAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pdf_view);
+
+        pdfViewPager = findViewById(R.id.pdfViewPager);
         Intent intent = getIntent();
-        CopyAsset copyAsset = new CopyAssetThreadImpl(this, new Handler());
-        String asset = null;
-        copyAsset.copy(asset, new File(getCacheDir(), "module1.pdf").getAbsolutePath());
-        System.out.println("************************");
-        System.out.println(asset);
-        pdfViewPager = new PDFViewPager(this, asset);
+//        System.out.println("************************");
+//        System.out.println(asset);
+
+        String asset = "module1.pdf";
+        adapter = new PDFPagerAdapter(this, asset);
+        pdfViewPager.setAdapter(adapter);
+
+//        pdfViewPager = new PDFViewPager(this, asset);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
 
-        ((PDFPagerAdapter) pdfViewPager.getAdapter()).close();
+        Objects.requireNonNull(adapter).close();
     }
 }

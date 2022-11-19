@@ -10,7 +10,7 @@
         android:id="@+id/pdfViewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:assetFileName="sample.pdf"/>
+        app:assetFileName="module1.pdf"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
