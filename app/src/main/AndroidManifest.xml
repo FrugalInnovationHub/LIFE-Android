@@ -13,6 +13,27 @@
         android:theme="@style/Theme.LifePassage"
         tools:targetApi="31">
         <activity
+            android:name=".AboutStudentsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".PassageActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ScuActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".FihActivity"
             android:exported="false">
             <meta-data
