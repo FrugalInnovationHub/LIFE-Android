@@ -9,4 +9,30 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="frugal_innovation_hub_logo">Frugal Innovation Hub Logo</string>
+    <string name="about_fih">El Frugal Innovation Hub es un programa de la escuela de ingeniería de la Universidad de Santa Clara. El centro actúa como un enlace entre profesores, estudiantes de ingeniería y de otras disciplinas, y organizaciones no gubernamentales para resolver problemas sociales y ambientales por medio del desarrollo de productos tecnológicos como aplicaciones móviles, sistemas de captación de agua  y sistemas hidropónicos.</string>
+
+    <string name="scu_logo">Santa Clara University Logo</string>
+    <string name="about_scu">La Universidad de Santa Clara es una institución académica católica y jesuita ubicada en Santa Clara, California. Estados Unidos. SCU está comprometida en hacer del mundo un lugar mejor. Buscamos nuevas tecnologías, fomentamos la creatividad, nos relacionamos con nuestra comunidades y compartimos una mentalidad empresarial y emprendedora.</string>
+
+    <string name="passage_logo">Passage Logo</string>
+    <string name="about_passage">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <string name="about_students_icon">About Students Icon</string>
+    <string name="about_students">
+        LOS ESTUDIANTES:
+        Cinthya Jauregui: Estudiante de ingeniería general. Especialidad en emprendimiento
+        Andrew Lemus: Estudiante de ingeniería mecánica. Especialidad en ingeniería aeroespacial
+        Edison Yang - Estudiante de ingeniería mecánica. Especialidad en ingeniería aeroespacial
+        Daniel McCann-Sayles - Estudiante de ingenería general
+        Nicole Mossing - Estudiante de salud pública
+        Jordyn Quesenberry - Estudiante de biología y salud pública
+        Linnea Rothi - Estudiante de biology, neuroscience
+        Emily Nakata  - Estudiante de biología y salud pública
+
+        PROFESORES TUTORES:
+        Jes Kuczenski: Profesora de ingenería general
+        Michele Parker: Profesora de salud pública
+    </string>
 </resources>
