@@ -9,8 +9,6 @@
     <es.voghdev.pdfviewpager.library.PDFViewPager
         android:id="@+id/pdfViewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:assetFileName="sample.pdf"/>
-
+        android:layout_height="match_parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

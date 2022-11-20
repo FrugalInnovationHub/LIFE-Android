@@ -47,7 +47,8 @@
           android:layout_marginTop="20dp"
           android:layout_marginEnd="20dp"
           android:layout_marginBottom="20dp"
-          android:text="Gravity" />
+          android:text="Gravity"
+          android:onClick="onClick" />
 
       <Button
           android:id="@+id/light"
@@ -58,7 +59,8 @@
           android:layout_marginTop="20dp"
           android:layout_marginEnd="20dp"
           android:layout_marginBottom="20dp"
-          android:text="Light Spectrum" />
+          android:text="Light Spectrum"
+          android:onClick="onClick" />
 
       <Button
           android:id="@+id/circuits"
@@ -69,7 +71,8 @@
           android:layout_marginTop="20dp"
           android:layout_marginEnd="20dp"
           android:layout_marginBottom="20dp"
-          android:text="Circuits" />
+          android:text="Circuits"
+          android:onClick="onClick" />
 
       <Button
           android:id="@+id/worksheet1"
@@ -80,7 +83,8 @@
           android:layout_marginTop="20dp"
           android:layout_marginEnd="20dp"
           android:layout_marginBottom="20dp"
-          android:text="Work sheets" />
+          android:text="Work sheets"
+          android:onClick="onClick" />
 
     </LinearLayout>
 
@@ -112,7 +116,8 @@
           android:layout_marginTop="20dp"
           android:layout_marginEnd="20dp"
           android:layout_marginBottom="20dp"
-          android:text="Water in our body" />
+          android:text="Water in our body"
+          android:onClick="onClick" />
 
       <Button
           android:id="@+id/importanceOfWater"
@@ -123,7 +128,8 @@
           android:layout_marginTop="20dp"
           android:layout_marginEnd="20dp"
           android:layout_marginBottom="20dp"
-          android:text="Importance of water" />
+          android:text="Importance of water"
+          android:onClick="onClick" />
 
       <Button
           android:id="@+id/digestion"
@@ -134,7 +140,8 @@
           android:layout_marginTop="20dp"
           android:layout_marginEnd="20dp"
           android:layout_marginBottom="20dp"
-          android:text="Water and Digestion" />
+          android:text="Water and Digestion"
+          android:onClick="onClick" />
 
 
       <Button
@@ -146,7 +153,8 @@
           android:layout_marginTop="20dp"
           android:layout_marginEnd="20dp"
           android:layout_marginBottom="20dp"
-          android:text="Drinking Habits" />
+          android:text="Drinking Habits"
+          android:onClick="onClick" />
 
       <Button
           android:id="@+id/science"
@@ -157,7 +165,8 @@
           android:layout_marginTop="20dp"
           android:layout_marginEnd="20dp"
           android:layout_marginBottom="20dp"
-          android:text="Scientific Method" />
+          android:text="Scientific Method"
+          android:onClick="onClick" />
 
     </LinearLayout>
 
@@ -189,7 +198,8 @@
           android:layout_marginTop="20dp"
           android:layout_marginEnd="20dp"
           android:layout_marginBottom="20dp"
-          android:text="Water Contamination" />
+          android:text="Water Contamination"
+          android:onClick="onClick" />
 
       <Button
           android:id="@+id/wash"
@@ -200,7 +210,8 @@
           android:layout_marginTop="20dp"
           android:layout_marginEnd="20dp"
           android:layout_marginBottom="20dp"
-          android:text="Wash" />
+          android:text="Wash"
+          android:onClick="onClick" />
 
       <Button
           android:id="@+id/experiments"
@@ -211,7 +222,8 @@
           android:layout_marginTop="20dp"
           android:layout_marginEnd="20dp"
           android:layout_marginBottom="20dp"
-          android:text="Experiments" />
+          android:text="Experiments"
+          android:onClick="onClick" />
 
     </LinearLayout>
   </RelativeLayout>

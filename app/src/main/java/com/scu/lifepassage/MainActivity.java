@@ -4,9 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+
+import java.io.File;
+
+import es.voghdev.pdfviewpager.library.asset.CopyAsset;
+import es.voghdev.pdfviewpager.library.asset.CopyAssetThreadImpl;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,5 +48,17 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(myIntent);
             }
         });
+
+        CopyAsset copyAsset = new CopyAssetThreadImpl(this, new Handler());
+        String[] assets = {
+                "module1.pdf",
+                "module2.pdf",
+                "module3.pdf",
+                "module4.pdf"
+        };
+
+        for(String asset : assets) {
+            copyAsset.copy(asset, new File(getCacheDir(), asset).getAbsolutePath());
+        }
     }
 }
