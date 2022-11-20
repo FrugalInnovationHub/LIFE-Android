@@ -20,34 +20,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final Button button = findViewById(R.id.about_us);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Code here executes on main thread after user presses button
-                Intent myIntent = new Intent(MainActivity.this, AboutUsActivity.class);
-//                myIntent.putExtra("key", value); //Optional parameters
-                MainActivity.this.startActivity(myIntent);
-            }
-        });
-
-        final ImageButton button2 = findViewById(R.id.learn);
-        button2.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Code here executes on main thread after user presses button
-                Intent myIntent = new Intent(MainActivity.this, LearnActivity.class);
-//                myIntent.putExtra("key", value); //Optional parameters
-                MainActivity.this.startActivity(myIntent);
-            }
-        });
-        final ImageButton button3 = findViewById(R.id.filter);
-        button3.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Code here executes on main thread after user presses button
-                Intent myIntent = new Intent(MainActivity.this, FilterActivity.class);
-//                myIntent.putExtra("key", value); //Optional parameters
-                MainActivity.this.startActivity(myIntent);
-            }
-        });
 
         CopyAsset copyAsset = new CopyAssetThreadImpl(this, new Handler());
         String[] assets = {
@@ -60,5 +32,36 @@ public class MainActivity extends AppCompatActivity {
         for(String asset : assets) {
             copyAsset.copy(asset, new File(getCacheDir(), asset).getAbsolutePath());
         }
+
+        final Button button = findViewById(R.id.about_us);
+        final ImageButton button2 = findViewById(R.id.learn);
+        final ImageButton button3 = findViewById(R.id.filter);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                Intent myIntent = new Intent(MainActivity.this, AboutUsActivity.class);
+//                myIntent.putExtra("key", value); //Optional parameters
+                MainActivity.this.startActivity(myIntent);
+            }
+        });
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                Intent myIntent = new Intent(MainActivity.this, LearnActivity.class);
+//                myIntent.putExtra("key", value); //Optional parameters
+                MainActivity.this.startActivity(myIntent);
+            }
+        });
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                Intent myIntent = new Intent(MainActivity.this, FilterActivity.class);
+//                myIntent.putExtra("key", value); //Optional parameters
+                MainActivity.this.startActivity(myIntent);
+            }
+        });
     }
 }
