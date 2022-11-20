@@ -41,8 +41,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
         CopyAsset copyAsset = new CopyAssetThreadImpl(this, new Handler());
-        String asset = "module1.pdf";
+        String[] assets = {
+                "module1.pdf",
+                "module2.pdf",
+                "module3.pdf",
+                "module4.pdf"
+        };
 
-        copyAsset.copy(asset, new File(getCacheDir(), asset).getAbsolutePath());
+        for(String asset : assets) {
+            copyAsset.copy(asset, new File(getCacheDir(), asset).getAbsolutePath());
+        }
     }
 }

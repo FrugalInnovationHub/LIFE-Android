@@ -24,7 +24,7 @@ public class PdfView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pdf_view);
 
-        String asset = "module1.pdf";
+        String asset = getIntent().getStringExtra("filename");
         pdfViewPager = findViewById(R.id.pdfViewPager);
         adapter = new PDFPagerAdapter(this, asset);
 
