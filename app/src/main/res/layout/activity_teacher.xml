@@ -9,19 +9,72 @@
     <ImageView
         android:id="@+id/teacherTitle"
         android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_height="150dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/teachers_title" />
     <LinearLayout
+        android:id="@+id/ll1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/teacherTitle">
+        android:layout_below="@id/teacherTitle"
+        android:gravity="center"
+        android:layout_margin="10dp">
         <Button
-            android:id="@+id/video1"
+            android:id="@+id/como_usar_el_filtro"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:text="Como usar el filtro"
+            android:layout_margin="50dp"/>
+        <Button
+            android:id="@+id/mensaje_para_profes"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:text="Mensaje para profes"
+            android:layout_margin="50dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll1"
+        android:gravity="center"
+        android:layout_margin="0dp">
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Video 1" />
+            android:text="Mantenimiento:"
+            android:gravity="left"/>
+
+        <Button
+            android:id="@+id/limpiar_tubos"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:text="Limpiar tubos"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/remplazar_arena"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:text="Remplazar arena"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/remplazar_grava"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:text="Remplazar grava y carbón activo"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/remplazar_malla"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:text="Remplazar malla"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/vacelina"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:text="Vacelina"
+            android:layout_margin="10dp"/>
     </LinearLayout>
 
 

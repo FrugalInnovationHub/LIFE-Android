@@ -3,6 +3,7 @@ package com.scu.lifepassage;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
@@ -22,9 +23,10 @@ public class VideoPlayerActivity extends AppCompatActivity implements MediaPlaye
         vw = (VideoView)findViewById(R.id.vidvw);
         vw.setMediaController(new MediaController(this));
         vw.setOnCompletionListener(this);
-
+        Intent intent = getIntent();
+        int key = intent.getIntExtra("key",0);
         // video name should be in lower case alphabet.
-        setVideo(R.raw.sample2);
+        setVideo(key);
     }
 
     public void setVideo(int id)
