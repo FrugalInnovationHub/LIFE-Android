@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         CopyAsset copyAsset = new CopyAssetThreadImpl(this, new Handler());
         String[] assets = {
+                "introduction.pdf",
                 "module1.pdf",
                 "module2.pdf",
                 "module3.pdf",

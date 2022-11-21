@@ -39,4 +39,11 @@
         \n\n<li><b>Michele Parker:</b> Profesora de salud pública</li>
         </ul>
     </string>
+    <string name="introduction">Introducción</string>
+    <string name="module1">Modulo 1</string>
+    <string name="module2">Modulo 2</string>
+    <string name="module3">Modulo 3</string>
+    <string name="module4">Modulo 4</string>
+
+
 </resources>

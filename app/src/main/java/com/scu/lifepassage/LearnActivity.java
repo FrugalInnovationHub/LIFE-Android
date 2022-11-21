@@ -19,18 +19,11 @@ public class LearnActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_learn);
 
         data = new HashMap<String, String>() {{
-            put("gravity", "module1.pdf");
-//            put("light", "module1.pdf");
-//            put("circuits", "module1.pdf");
-            put("worksheet1", "module4.pdf");
-            put("waterInBody", "module2.pdf");
-//            put("importanceOfWater", "module1.pdf");
-//            put("digestion", "module1.pdf");
-//            put("habits", "module1.pdf");
-//            put("science", "module1.pdf");
-            put("contamination", "module3.pdf");
-//            put("wash", "module1.pdf");
-//            put("experiments", "module1.pdf");
+            put("introduction", "introduction.pdf");
+            put("module1", "module1.pdf");
+            put("module2", "module2.pdf");
+            put("module3", "module3.pdf");
+            put("module4", "module4.pdf");
         }};
     }
 
@@ -40,30 +33,16 @@ public class LearnActivity extends AppCompatActivity implements View.OnClickList
         int id = v.getId();
         boolean flag = true;
 
-        if (id == R.id.gravity) {
-            pdfViewIntent.putExtra("filename", this.data.get("gravity"));
-//        } else if (id == R.id.light) {
-//            pdfViewIntent.putExtra("filename", this.data.get("light"));
-//        } else if (id == R.id.circuits) {
-//            pdfViewIntent.putExtra("filename", this.data.get("circuits"));
-        } else if (id == R.id.worksheet1) {
-            pdfViewIntent.putExtra("filename", this.data.get("worksheet1"));
-        } else if (id == R.id.waterInBody) {
-            pdfViewIntent.putExtra("filename", this.data.get("waterInBody"));
-//        } else if (id == R.id.importanceOfWater) {
-//            pdfViewIntent.putExtra("filename", this.data.get("importanceOfWater"));
-//        } else if (id == R.id.digestion) {
-//            pdfViewIntent.putExtra("filename", this.data.get("digestion"));
-//        } else if (id == R.id.habits) {
-//            pdfViewIntent.putExtra("filename", this.data.get("habits"));
-//        } else if (id == R.id.science) {
-//            pdfViewIntent.putExtra("filename", this.data.get("science"));
-        } else if (id == R.id.contamination) {
-            pdfViewIntent.putExtra("filename", this.data.get("contamination"));
-//        } else if (id == R.id.wash) {
-//            pdfViewIntent.putExtra("filename", this.data.get("wash"));
-//        } else if (id == R.id.experiments) {
-//            pdfViewIntent.putExtra("filename", this.data.get("experiments"));
+        if (id == R.id.introduction) {
+            pdfViewIntent.putExtra("filename", this.data.get("introduction"));
+        } else if (id == R.id.module1) {
+            pdfViewIntent.putExtra("filename", this.data.get("module1"));
+        } else if (id == R.id.module2) {
+            pdfViewIntent.putExtra("filename", this.data.get("module2"));
+        } else if (id == R.id.module3) {
+            pdfViewIntent.putExtra("filename", this.data.get("module3"));
+        } else if (id == R.id.module4) {
+            pdfViewIntent.putExtra("filename", this.data.get("module4"));
         } else {
           flag = false;
         }
