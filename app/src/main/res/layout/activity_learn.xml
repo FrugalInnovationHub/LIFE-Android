@@ -6,110 +6,90 @@
     android:layout_height="match_parent"
     tools:ignore="SpeakableTextPresentCheck">
 
-  <androidx.constraintlayout.widget.ConstraintLayout
+  <RelativeLayout
       android:id="@+id/relativeLayout"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      tools:context=".LearnActivity">
+      android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/learnTitle"
         android:layout_width="wrap_content"
-        android:layout_height="150dp"
+        android:layout_height="250dp"
+        android:scaleType="fitCenter"
         android:src="@drawable/learntitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.60"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_centerHorizontal="true"/>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout1"
+    <LinearLayout
+        android:layout_below="@id/learnTitle"
+        android:id="@+id/ll1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/learnTitle">
-
+        android:gravity="left"
+        android:layout_margin="20dp">
+      <TextView
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:layout_gravity="center" />
       <Button
           android:id="@+id/introduction"
-          android:layout_width="wrap_content"
-          android:layout_height="80dp"
-          android:layout_gravity="center_vertical"
+          android:layout_width="150dp"
+          android:layout_height="100dp"
+          android:gravity="center"
           android:layout_marginStart="32dp"
           android:onClick="onClick"
-          android:text="@string/introduction"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toTopOf="parent" />
+          android:text="@string/introduction" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
+    <LinearLayout
+        android:layout_below="@id/ll1"
+        android:id="@+id/ll2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/constraintLayout1">
+        android:layout_margin="20dp">
+      <TextView
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+        android:text="Modulos:"
+        android:layout_gravity="center" />
 
       <Button
           android:id="@+id/module1"
-          android:layout_width="120dp"
-          android:layout_height="80dp"
+          android:layout_width="150dp"
+          android:layout_height="100dp"
           android:layout_gravity="center_vertical"
           android:layout_marginStart="32dp"
           android:onClick="onClick"
-          android:text="@string/module1"
-          app:layout_constraintEnd_toStartOf="@+id/module2"
-          app:layout_constraintHorizontal_bias="0.5"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toTopOf="parent" />
+          android:text="@string/module1" />
 
       <Button
           android:id="@+id/module2"
-          android:layout_width="120dp"
-          android:layout_height="80dp"
+          android:layout_width="150dp"
+          android:layout_height="100dp"
           android:layout_gravity="center_vertical"
           android:layout_marginStart="32dp"
           android:onClick="onClick"
-          android:text="@string/module2"
-          app:layout_constraintEnd_toStartOf="@+id/module3"
-          app:layout_constraintHorizontal_bias="0.5"
-          app:layout_constraintStart_toEndOf="@+id/module1"
-          app:layout_constraintTop_toTopOf="parent" />
+          android:text="@string/module2" />
 
       <Button
           android:id="@+id/module3"
-          android:layout_width="120dp"
-          android:layout_height="80dp"
+          android:layout_width="150dp"
+          android:layout_height="100dp"
           android:layout_gravity="center_vertical"
           android:layout_marginStart="32dp"
           android:onClick="onClick"
-          android:text="@string/module3"
-          app:layout_constraintEnd_toStartOf="@+id/module4"
-          app:layout_constraintHorizontal_bias="0.5"
-          app:layout_constraintStart_toEndOf="@+id/module2"
-          app:layout_constraintTop_toTopOf="parent" />
+          android:text="@string/module3" />
 
       <Button
           android:id="@+id/module4"
-          android:layout_width="120dp"
-          android:layout_height="80dp"
+          android:layout_width="150dp"
+          android:layout_height="100dp"
           android:layout_gravity="center_vertical"
           android:layout_marginStart="32dp"
           android:onClick="onClick"
-          android:text="@string/module4"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.5"
-          app:layout_constraintStart_toEndOf="@+id/module3"
-          app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+          android:text="@string/module4" />
+    </LinearLayout>
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  </RelativeLayout>
 </ScrollView>

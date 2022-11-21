@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LifePassage</string>
+    <string name="app_name">LIFE</string>
     <string name="title_activity_learn">Learn</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -11,13 +11,13 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
     <string name="frugal_innovation_hub_logo">Frugal Innovation Hub Logo</string>
-    <string name="about_fih"><b>Frugal Innovation Hub (Centro de Innovación Frugal):</b> \n El Frugal Innovation Hub es un programa de la escuela de ingeniería de la Universidad de Santa Clara. El centro actúa como un enlace entre profesores, estudiantes de ingeniería y de otras disciplinas, y organizaciones no gubernamentales para resolver problemas sociales y ambientales por medio del desarrollo de productos tecnológicos como aplicaciones móviles, sistemas de captación de agua  y sistemas hidropónicos.</string>
+    <string name="about_fih"><b>Frugal Innovation Hub (Centro de Innovación Frugal):</b> \n El Frugal Innovation Hub es un programa de la escuela de ingeniería de la Universidad de Santa Clara. El centro actúa como un enlace entre profesores, estudiantes de ingeniería y de otras disciplinas, y organizaciones no gubernamentales para resolver problemas sociales y ambientales por medio del desarrollo de productos tecnológicos como aplicaciones móviles, sistemas de captación de agua  y sistemas hidropónicos. \n <b> Engineering World Health (Programa de Ingeniería de Salud Global)</b> \n Engineering World Health es un programa de la escuela de salud pública y la escuela de ingeniería de SCU  que busca facilitar trabajos multidisciplinarios entre  estudiantes de estas disciplinas. El proyecto LIFE es un ejemplo de este trabajo interdisciplinario</string>
 
     <string name="scu_logo">Santa Clara University Logo</string>
-    <string name="about_scu"><b>Universidad de Santa Clara (SCU):</b> \nLa Universidad de Santa Clara es una institución académica católica y jesuita ubicada en Santa Clara, California. Estados Unidos. SCU está comprometida en hacer del mundo un lugar mejor. Buscamos nuevas tecnologías, fomentamos la creatividad, nos relacionamos con nuestra comunidades y compartimos una mentalidad empresarial y emprendedora.</string>
+    <string name="about_scu"><b>Universidad de Santa Clara (SCU):</b> \nLa Universidad de Santa Clara es una institución académica católica y jesuita ubicada en Santa Clara, California. Estados Unidos. SCU está comprometida en hacer del mundo un lugar mejor. Buscamos nuevas tecnologías, fomentamos la creatividad, nos relacionamos con nuestra comunidades y compartimos una mentalidad empresarial y emprendedora.  \n </string>
 
     <string name="passage_logo">Passage Logo</string>
-    <string name="about_passage"><b>Engineering World Health (Programa de Ingeniería de Salud Global):</b> \n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="about_passage"><b>PASSAGE (Educación a partir de la exploración):</b> \n PASSAGE es una iniciativa del piloto Lee que emprendió un viaje en Diciembre 2 del 2022 en su propia avioneta bimotor por multiples paises de América Latina y el Caribe. El objetivo de su viaje es entregar útiles escolares, libros y equipos de laboratorio a docenas de escuelas. El proyecto tiene como objetivo empoderar a los niños en edad escolar para que se inspirén a estudiar y sean los que traigan soluciones a sus propias comunidades.</string>
 
     <string name="about_students_icon">About Students Icon</string>
     <string name="about_students"><u><b>LOS ESTUDIANTES:</b></u>
