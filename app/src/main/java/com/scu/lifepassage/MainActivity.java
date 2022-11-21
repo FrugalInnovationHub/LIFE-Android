@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         final Button button = findViewById(R.id.about_us);
         final ImageButton button2 = findViewById(R.id.learn);
         final ImageButton button3 = findViewById(R.id.filter);
+        final Button button4 = findViewById(R.id.teacher);
 
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -59,6 +60,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
                 Intent myIntent = new Intent(MainActivity.this, FilterActivity.class);
+//                myIntent.putExtra("key", value); //Optional parameters
+                MainActivity.this.startActivity(myIntent);
+            }
+        });
+
+        button4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                Intent myIntent = new Intent(MainActivity.this, TeacherActivity.class);
 //                myIntent.putExtra("key", value); //Optional parameters
                 MainActivity.this.startActivity(myIntent);
             }

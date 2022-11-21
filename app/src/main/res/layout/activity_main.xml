@@ -61,7 +61,7 @@
         android:src="@drawable/title" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/teacher"
         android:layout_width="240dp"
         android:layout_height="100dp"
         android:text="Teacher Resources"
